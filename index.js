@@ -6,7 +6,6 @@ import wordRanker from './modules/wordRanker/wordRanker.controller.js';
 
 const app = express();
 
-// app.use(cors());
 app.use(express.static('public'))
 
 app.get('/rank', wordRanker);

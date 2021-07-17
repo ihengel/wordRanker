@@ -2,7 +2,6 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'path';
 import express from 'express';
-import cors from 'cors';
 import wordRanker from './modules/wordRanker/wordRanker.controller.js';
 
 const app = express();

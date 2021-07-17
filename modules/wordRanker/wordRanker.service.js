@@ -16,7 +16,7 @@ function safeInc(obj, key) {
   return incrementedObj;
 }
 
-module.exports = function rank(text) {
+export default function rank(text) {
   const words = text.split(/\s+/);
 
   const countByWord = words
@@ -31,4 +31,4 @@ module.exports = function rank(text) {
     return acc;
   }, {});
   return starsByWords;
-};
+}

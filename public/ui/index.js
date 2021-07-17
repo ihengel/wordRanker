@@ -17,7 +17,7 @@ function rankToStars(rank) {
 
 document.querySelector('#rankBtn').addEventListener('click', async () => {
   const topic = document.querySelector('#topicToRank').value;
-  const url = `http://localhost:3000/rank?topic=${topic}`;
+  const url = `rank?topic=${topic}`;
   const response = await fetch(url);
   const { data } = await response.json();
   const wordsByStars = Object.keys(data).reduce((acc, word) => {
